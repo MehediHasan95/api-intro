@@ -11,10 +11,32 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <style>
+      .album {
+        border: 1px solid lightslategray;
+        border-radius: 13px;
+        margin: 15px;
+        padding: 15px;
+        background-color: goldenrod;
+        color: white;
+        width: 50%;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1 class="text-center">{JSON} Placeholder Album</h1>
     </header>
+    <main>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button onclick="loadData()" class="btn btn-warning" type="button">
+          Show my Data
+        </button>
+      </div>
+      <section id="album"></section>
+    </main>
+
+    <!-- Script -->
+    <script src="js/album.js"></script>
   </body>
 </html>

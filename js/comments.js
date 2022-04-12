@@ -4,8 +4,6 @@ function loadData() {
     .then((data) => displayComments(data));
 }
 
-loadData();
-
 function displayComments(comments) {
   const commentContainer = document.getElementById("comment-container");
 
