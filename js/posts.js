@@ -3,7 +3,6 @@ function loadData() {
     .then((res) => res.json())
     .then((data) => displayData(data));
 }
-loadData();
 
 function displayData(posts) {
   const postContainer = document.getElementById("post-container");
